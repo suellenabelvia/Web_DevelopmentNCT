@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacific Travel Agency</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Menghubungkan file CSS eksternal -->
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <!-- Logo Website -->
+            <a href="#" class="logo">NCT <span>dream</span></a>
+            <!-- Navigasi Menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="#">Hotel</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div> <!-- penutup container header -->
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <div>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Welcome to NCT Dream</p>
+                    <h1>Discover Your Even when its hard,
+                        <br>keep shining like the star you are </br></h1>
+                    <p> focused on living in the present, personal growth, and finding happiness</p>
+                </div> <!-- penutup hero-content -->
+
+                <!-- Tombol Play Video -->
+                <a href="#video-modal" class="play-button">
+                    <span>&#9658;</span>
+                </a>
+
+
+            </div>
+
+            <!-- Modal Video -->
+            <div id="video-modal" class="video-modal">
+                <div class="video-content">
+                    <iframe width="800" height="450"
+                        src="https://www.youtube.com/embed/Scxs7L0vhZ4"
+                        title="YouTube video player" frameborder="0" allowfullscreen>
+                    </iframe>
+                    <a href="#" class="close-modal">&times;</a>
+                </div>
+            </div>
+
+            <!-- Form Pencarian -->
+            <div class="search-form-wrapper">
+                <!-- Tab Pilihan -->
+                <input type="radio" id="tab-tour" name="search-tab" checked class="hidden-radio">
+                <input type="radio" id="tab-hotel" name="search-tab" class="hidden-radio">
+                <div class="search-form-tabs">
+                    <label for="tab-tour" class="tab-link">Search Tour</label>
+                    <label for="tab-hotel" class="tab-link">Hotel</label>
+                </div>
+
+
+
+                <!-- Input Field Form -->
+                <div class="search-form-body">
+                    <div class="search-form-fields">
+                        <!-- Input Destinasi -->
+                        <div class="field-item">
+                            <span class="field-label">DESTINATION</span>
+                            <div class="field-input">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <span>Search place</span>
+                            </div> <!-- penutup field-input -->
+                        </div> <!-- penutup field-item -->
+
+                        <!-- Input Check-in -->
+                        <div class="field-item">
+                            <span class="field-label">CHECK-IN DATE</span>
+                            <div class="field-input">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                <span>Check In Date</span>
+                            </div> <!-- penutup field-input -->
+                        </div> <!-- penutup field-item -->
+
+                        <!-- Input Check-out -->
+                        <div class="field-item">
+                            <span class="field-label">CHECK-OUT DATE</span>
+                            <div class="field-input">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                <span>Check Out Date</span>
+                            </div> <!-- penutup field-input -->
+                        </div> <!-- penutup field-item -->
+
+                        <!-- Input Harga -->
+                        <div class="field-item">
+                            <span class="field-label">PRICE LIMIT</span>
+                            <div class="field-input">
+                                <span>$100</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div> <!-- penutup field-input -->
+                        </div> <!-- penutup field-item -->
+                    </div> <!-- penutup search-form-fields -->
+                    <button class="btn-search">SEARCH</button>
+                </div> <!-- penutup search-form-body -->
+            </div> <!-- penutup search-form-wrapper -->
+        </section> <!-- penutup hero -->
+
+        <!-- Services dan About -->
+        <div class="main-content-area">
+            <div class="container content-columns">
+                <!-- Services -->
+                <div class="services-grid">
+                    <div class="service-item" style="background-image: url('images/jeno1.png');">
+                        <div class="icon-box">
+                            <img src="images/stick.png" alt="Activities Icon">
+                        </div>
+                        <h4>Love Letter</h4>
+                        <p> "Everyone is someone that is writing a part of history in the world, and so as much as you work hard, you will become a cool person.</p>
+                    </div> <!-- penutup service-item -->
+                    <div class="service-item" style="background-image: url('images/jeno4.png');">
+                        <div class="icon-box">
+                            <img src="images/stick.png" alt="Activities Icon">
+                        </div>
+                        <h4>Love Letter</h4>
+                        <p>"Life is still long, so don't be unsure or insecure. Let's just follow the flow of time. We will meet chance or opportunities and a new path.</p>
+                    </div> <!-- penutup service-item -->
+                    <div class="service-item" style="background-image: url('images/jeno2.png');">
+                        <div class="icon-box">
+                            <img src="images/stick.png" alt="Activities Icon">
+                        </div>
+                        <h4>Love Letter</h4>
+                        <p>"don't forget to be happy, pretend to be happy, until you forget you're pretend"</p>
+                    </div> <!-- penutup service-item -->
+                    <div class="service-item" style="background-image: url('images/jeno3.png');">
+                        <div class="icon-box">
+                            <img src="images/stick.png" alt="Activities Icon">
+                        </div>
+                        <h4>Love Letter</h4>
+                        <p>"keep walking and following the light we were the dream don't forget each other"</p>
+                    </div> <!-- penutup service-item -->
+                </div> <!-- penutup services-grid -->
+
+                <!-- About Section -->
+                <div class="about-content fade-up">
+                    <p class="subtitle">Welcome to NCT DREAM</p>
+                    <h2>It's time to start your adventure</h2>
+                    <p>"Are you hungry? Then eat. Sleepy? Sleep. Are you worrying about if you should quit work? Do it, as long as you don't regret it. Live your life enjoyably, just to the extent where you don't regret anything. Do it, do whatever".</p>
+                    <p>Far far away, behind the word mountains...</p>
+                    <a href="#" class="btn">Search Destination</a>
+                </div> <!-- penutup about-content -->
+            </div> <!-- penutup container content-columns -->
+        </div> <!-- penutup main-content-area -->
+
+        <!-- Destination Section -->
+        <section class="destinations">
+            <div class="container">
+                <div class="section-title">
+                    <p class="cursive-subtitle">WE LOVE YOU</p>
+                    <h2>Select Your Love</h2>
+                </div> <!-- penutup section-title -->
+                <div class="destination-grid">
+                <!-- Card 1 -->
+                <div class="destination-card fade-up">
+                    <img src="images/mark-lee.jpg" alt="Philippines">
+                    <div class="dest-name">Mark Lee</div>
+                    <div class="dest-tours"><span>8 Tours</span></div>
+                </div> <!-- penutup destination-card -->
+
+                <!-- Card 2 -->
+                <div class="destination-card">
+                    <img src="images/haechan.jpg" alt="Canada">
+                    <div class="dest-name">Haechan</div>
+                    <div class="dest-tours"><span>2 Tours</span></div>
+                </div> <!-- penutup destination-card -->
+
+                <!-- Card 3 -->
+                <div class="destination-card">
+                    <img src="images/Jeno.jpg" alt="Thailand">
+                    <div class="dest-name">Jeno</div>
+                    <div class="dest-tours"><span>5 Tours</span></div>
+                </div> <!-- penutup destination-card -->
+
+                <!-- Card 4 -->
+                <div class="destination-card">
+                    <img src="images/jaemin.jpg" alt="Australia">
+                    <div class="dest-name">Jaemin</div>
+                    <div class="dest-tours"><span>5 Tours</span></div>
+                </div> <!-- penutup destination-card -->
+
+            </div> <!-- penutup container -->
+        </section> <!-- penutup destinations -->
+
+        <!-- Tour Destination -->
+        <section class="tour-destination">
+            <div class="container">
+                <div class="section-title">
+                    <p class="cursive-subtitle">love life</p>
+                    <h2>Tour love destination</h2>
+                </div> <!-- penutup section-title -->
+                <div class="tour-grid">
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="images/dream3.png" alt="Beach">
+                            <div class="tour-price">$550/person</div>
+                        </div> <!-- penutup tour-image -->
+                        <div class="tour-content">
+                            <p class="tour-duration">10 DAYS TOUR</p>
+                            <h3>Banaue Rice Terraces</h3>
+                            <p class="tour-location">Banaue, Ifugao, Philippines</p>
+                            <div class="tour-features">
+                                <span class="feature-item">
+                                    <i class="fas fa-heart"></i> <span class="feature-text">2</span>
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fas fa-comment"></i> <span class="feature-text">3</span>
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fas fa-share"></i> <span class="feature-text">100</span>
+                                </span>
+                            </div>
+                        </div> <!-- penutup tour-content -->
+                    </div> <!-- penutup tour-card -->
+
+                    <!-- Tour Card 2 -->
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="images/dream3.png" alt="Beach">
+                            <div class="tour-price">$550/person</div>
+                        </div> <!-- penutup tour-image -->
+                        <div class="tour-content">
+                            <p class="tour-duration">10 DAYS TOUR</p>
+                            <h3>Banaue Rice Terraces</h3>
+                            <p class="tour-location">Banaue, Ifugao, Philippines</p>
+                            <div class="tour-features">
+                                <span class="feature-item">
+                                    <i class="fas fa-heart"></i> <span class="feature-text">2</span>
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fas fa-comment"></i> <span class="feature-text">3</span>
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fas fa-share"></i> <span class="feature-text">100</span>
+                                </span>
+                            </div>
+                        </div> <!-- penutup tour-content -->
+                    </div> <!-- penutup tour-card -->
+
+                    <!-- Tour Card 3 -->
+                    <div class="tour-card">
+                        <div class="tour-image">
+                            <img src="images/dream2.png" alt="City">
+                            <div class="tour-price">$550/person</div>
+                        </div> <!-- penutup tour-image -->
+                        <div class="tour-content">
+                            <p class="tour-duration">7 DAYS TOUR</p>
+                            <h3>Banaue Rice Terraces</h3>
+                            <p class="tour-location">Banaue, Ifugao, Philippines</p>
+                            <div class="tour-features">
+                                <span class="feature-item">
+                                    <i class="fas fa-heart"></i> <span class="feature-text">2</span>
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fas fa-comment"></i> <span class="feature-text">3</span>
+                                </span>
+                                <span class="feature-item">
+                                    <i class="fas fa-share"></i> <span class="feature-text">100</span>
+                                </span>
+                            </div>
+                        </div> <!-- penutup tour-content -->
+                    </div> <!-- penutup tour-card -->
+                </div> <!-- penutup tour-grid -->
+            </div> <!-- penutup container -->
+        </section> <!-- penutup tour-destination -->
+
+        <!-- === ABOUT US SECTION ===== -->
+        <section class="about-photo-section">
+            <!-- Tombol Play Video -->
+            <a href="#video-modal" class="play-button-1">
+                <span>&#9658;</span>
+            </a>
+            <div class="container about-photo-grid">
+                <div class="about-bg">
+                    <img src="images/nnctdream22.png" alt="">
+                </div> 
+                <div class="about-photo-image">
+                    <img src="images/nctdream.png" alt="Person swinging over turquoise water">
+                </div>
+
+                <!-- Modal Video 1 -->
+                <div id="video-modal-1" class="video-modal">
+                    <div class="video-content">
+                        <iframe width="800" height="450"
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            title="YouTube video player" frameborder="0" allowfullscreen>
+                        </iframe>
+                        <a href="#" class="close-modal">&times;</a>
+                    </div>
+                </div>
+
+                <div class="about-photo-content">
+                    <p class="about-us-subtitle">About Us</p>
+                    <h2>Make Your Tour <br>Memorable and Safe <br>With Us</h2>
+                    <p>“For all of you who are striving for your dreams, you should believe in yourself and don’t let anyone bring you down. Negativity doesn’t exist—it’s all about positivity, so keep that in mind.”</p>
+                    <a href="#" class="btn book-now">Book Your Love Destination</a>
+                </div>
+            </div>
+        </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="testimonial-section">
+            <div class="overlay"></div>
+        <div class="container">
+            <div class="section-header">
+            <p class="subtitle">section</p>
+            <h2 class="title">Love Letter</h2>
+            </div>
+
+            <div class="testimonial-cards">
+            <!-- Card 1 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="feedback">
+                “I have many goals, but I want to be a person who can do small things one by one”
+                “You can be bad at things. You can stay weird. That’s you. That’s just the way you are and that’s cool” 
+                “I feel like the possibility of all those possibilities being possible is just another possibility that can possibly happen"
+                </p>
+                <div class="author">
+                <img src="images/jeno5.png" alt="Lee Jeno">
+                <h4>Lee Jenno</h4>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="feedback">
+               "Everyone is someone that is writing a part of history in the world, and so as much as you work hard, you will become a cool person. You will become a cool person and you will become a good person, a good adult, and that’s how you shed light on the world, everyone
+                </p>
+                <div class="author">
+                <img src="images/jeno6.png" alt="Jeno">
+                <h4>jeno</h4>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="feedback">
+                “I realized I could not keep doing what others say, and so I started to walk my own path. In the past I tried to appear stronger on the outside, but now I try to focus on the inside to truly become stronger. You have to have your own thoughts and ideas so others can not shake you
+                </p>
+                <div class="author">
+                <img src="images/jeno7.png" alt="mark lee">
+                <h4>mark lee</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!-- Recent Post -->
+        <section class="recent-post">
+            
+            <div class="container">
+                <div class="section-title">
+                    <p class="cursive-subtitle">Our Blog</p>
+                    <h2>Recent Post</h2>
+                </div> <!-- penutup section-title -->
+                <div class="post-grid">
+                    <!-- Post 1 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/card3.png" alt="Blog Post 1">
+                            <div class="post-date">
+                                <span>11</span>
+                                <span>September 2020</span>
+                            </div>
+                        </div> <!-- penutup post-image -->
+                        <div class="post-content">
+                            <h2>You shouldn't think of it as hard way and even if you get stressed out you should think of it as a happy stress”</h2>
+                            <a href="#" class="btn-read-more">Read more</a>
+                        </div> <!-- penutup post-content -->
+                    </div> <!-- penutup post-card -->
+
+                    <!-- Post 2 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/card1.png" alt="Blog Post 2">
+                            <div class="post-date">
+                                <span>11</span>
+                                <span>September 2020</span>
+                            </div>
+                        </div> <!-- penutup post-image -->
+                        <div class="post-content">
+                            <h2> "It’s not alway easy, but that’s life, be strong cause there better say ahead</h2>
+                            <a href="#" class="btn-read-more">Read more</a>
+                        </div> <!-- penutup post-content -->
+                    </div> <!-- penutup post-card -->
+
+                    <!-- Post 3 -->
+                    <div class="post-card">
+                        <div class="post-image">
+                            <img src="images/card2.png" alt="Blog Post 3">
+                            <div class="post-date">
+                                <span>11</span>
+                                <span>September 2020</span>
+                            </div>
+                        </div> <!-- penutup post-image -->
+                        <div class="post-content">
+                            <h2>"There are no one who doesn’t have a hard time. Being thankful or giving thanks is one of the key to be happy"</h2>
+                            <a href="#" class="btn-read-more">Read more</a>
+                        </div> <!-- penutup post-content -->
+                    </div> <!-- penutup post-card -->
+                </div> <!-- penutup post-grid -->
+            </div> <!-- penutup container -->
+        </section> <!-- penutup recent-post -->
+    </main> <!-- penutup main -->
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>WE ARE NCT DREAM WE LOVE U</h2>
+            <p>We can manage your dream building A small river named Duden flows by their place</p>
+            <a href="#" class="btn">Ask For A Quote</a>
+        </div> <!-- penutup container -->
+    </section> <!-- penutup cta -->
+
+    <!-- ===== BLOG / NEWS SECTION ===== -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="blog-cards">
+
+            <!-- Card 1 -->
+            <div class="blog-card">
+                <div class="blog-img">
+                <img src="images/mark1.png" alt="Blog Image">
+                <div class="blog-date">
+                    <h3>11</h3>
+                    <p>2020<br>September</p>
+                </div>
+                </div>
+                <div class="blog-content">
+                <h4>Most Popular Place In This World</h4>
+                <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="blog-card">
+                <div class="blog-img">
+                <img src="images/mark3.png" alt="Blog Image">
+                <div class="blog-date">
+                    <h3>11</h3>
+                    <p>2020<br>September</p>
+                </div>
+                </div>
+                <div class="blog-content">
+                <h4>Most Popular Place In This World</h4>
+                <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="blog-card">
+                <div class="blog-img">
+                <img src="images/mark4.png" alt="Blog Image">
+                <div class="blog-date">
+                    <h3>11</h3>
+                    <p>2020<br>September</p>
+                </div>
+                </div>
+                <div class="blog-content">
+                <h4>Most Popular Place In This World</h4>
+                <a href="#" class="read-more">Read more</a>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>About</h4>
+                <p>Far far away, behind the word mountains...</p>
+
+                <!-- Tambahan ikon sosial media -->
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div> <!-- penutup footer-col -->
+
+
+
+            <div class="footer-col">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Online Enquiry</a></li>
+                    <li><a href="#">General Enquiries</a></li>
+                    <li><a href="#">Booking Conditions</a></li>
+                    <li><a href="#">Privacy and Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div> <!-- penutup footer-col -->
+
+            <div class="footer-col">
+                <h4>Experience</h4>
+                <ul>
+                    <li><a href="#">Adventure</a></li>
+                    <li><a href="#">Hotel and Restaurant</a></li>
+                    <li><a href="#">Beach</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Camping</a></li>
+                </ul>
+            </div> <!-- penutup footer-col -->
+
+            <div class="footer-col">
+                <h4>Have a Questions?</h4>
+                <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                <p>+2 392 3929 210</p>
+                <p>info@yourdomain.com</p>
+            </div> <!-- penutup footer-col -->
+        </div> <!-- penutup container footer-grid -->
+
+        <div class="copyright">
+            <p>Copyright ©2025 All rights reserved |</p>
+        </div> <!-- penutup copyright -->
+    </footer>
+</body>
+</html>
